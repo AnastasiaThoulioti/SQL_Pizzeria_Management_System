@@ -52,12 +52,15 @@ LEFT JOIN
 ### Key insights:
 
 -**Top-Selling Items:** Certain pizzas and sides consistently appear as the most ordered items, highlighting customer favorites.
+
 -**Category Trends:** Orders are unevenly distributed across categories, helping the pizzeria prioritize inventory for high-demand items.
+
 -**Delivery vs Pickup:** The query also allows tracking the proportion of delivery orders versus in-store pickups, useful for logistics and staffing planning.
 
 ### Data Visualization
 
 ![Pie_chart_of_Sales](Images/Pie_chart_of_Sales.png)
+
 *Visualizes the proportion of sales per category, helping identify top-selling product types.*
 
 ### 2.Ingredient Requirements and Cost
@@ -99,7 +102,9 @@ FROM
 
 ### Key Insights:
 -**Ingredient Planning:** Identifies exactly how much of each ingredient is needed based on current orders, preventing shortages.
+
 -**Cost Analysis:** Calculates the cost per ingredient for all orders, helping track total expenses and optimize menu pricing.
+
 -**Inventory Efficiency:** Provides a foundation to compare required quantities against current stock, enabling smarter purchasing decisions.
 
 ### Data Visualization
@@ -133,7 +138,9 @@ LEFT JOIN
 
 ### Key Insights:
 -**Stock Shortages:** Quickly identifies ingredients that are running low, helping prioritize purchases.
+
 -**Inventory Optimization:** Shows which ingredients have surplus, reducing waste and overstocking.
+
 -**Operational Planning:** Supports decision-making for menu availability and supplier orders.
 
 ### Data Visualization
@@ -165,12 +172,15 @@ LEFT JOIN
 ### Key Insights:
 
 -**Shift Tracking:** Monitors the hours worked by each staff member, helping ensure fair scheduling.
+
 -**Cost Analysis:** Calculates labor costs per shift, giving managers insight into operational expenses.
+
 -**Staff Optimization:** Identifies patterns in staffing needs, which can guide scheduling decisions and reduce unnecessary costs.
 
 ### Data Visualization
 
 ![Delivery vs Pickup](Images/Delivery_vs_Pickup.png)
+
 *Compares delivery and pickup orders, guiding logistics and operational planning.*
 
 # What I Learned
@@ -186,15 +196,21 @@ LEFT JOIN
 # Insights
 
 -**Product Performance:** Identified which items and categories drive the most sales, supporting inventory and menu planning.
+
 -**Inventory Management:** Highlighted gaps and surpluses in stock, helping optimize procurement and reduce waste.
+
 -**Sales Patterns:** Detected peak times for orders and revenue, informing operational planning and resource allocation.
+
 -**Customer Preferences:** Analyzed delivery vs. pickup trends, guiding logistics and service strategy.
+
 -**Operational Costs:** Monitored staff-related costs, providing insights for efficient workforce management.
 
 # Challenges I Faced
 
 -**Complex SQL Queries:** Joining multiple tables and creating aggregated views was challenging, especially when calculating ingredient costs accurately.
+
 -**Dashboard Integration:** Combining SQL results with Python for visualization needed careful data preparation to ensure accurate insights.
+
 -**Scalability & Readability:** Ensuring that queries and scripts remained efficient and understandable as the project grew.
 
 # Conclusion
