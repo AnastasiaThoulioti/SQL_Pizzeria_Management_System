@@ -57,7 +57,7 @@ LEFT JOIN
 
 ### Data Visualization
 
-![Pie_chart_of_Sales](Images\Pie_chart_of_Sales.png)
+![Pie_chart_of_Sales](SQL_Pizzaria_Project\Images\Pie_chart_of_Sales.png)
 *Visualizes the proportion of sales per category, helping identify top-selling product types.*
 
 ### 2.Ingredient Requirements and Cost
