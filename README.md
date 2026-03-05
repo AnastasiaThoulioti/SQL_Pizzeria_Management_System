@@ -59,7 +59,7 @@ LEFT JOIN
 
 ### Data Visualization
 
-![Pie_chart_of_Sales](SQL_Pizzaria_Project/Images/Pie_chart_of_Sales.png)
+![Pie_chart_of_Sales](SQL_Pizzeria_Project/Images/Pie_chart_of_Sales.png)
 
 *Visualizes the proportion of sales per category, helping identify top-selling product types.*
 
@@ -109,7 +109,7 @@ FROM
 
 ### Data Visualization
 
-![Top Selling Items](Images/Top_Selling_Items.png)
+![Top Selling Items](SQL_Pizzeria_Project/Images/Top_Selling_Items.png)
 *Shows which items contribute most to revenue, supporting inventory and menu decisions.*
 
 ### 3.Inventory vs Orders
@@ -145,7 +145,7 @@ LEFT JOIN
 
 ### Data Visualization
 
-![Orders and Sales by Hour](Images/Orders_and_Sales_by_Hour.png)
+![Orders and Sales by Hour](SQL_Pizzeria_Project/Images/Orders_and_Sales_by_Hour.png)
 *Tracks order volume and sales across hours of the day, revealing peak periods for staffing and preparation.*
 
 ### 4.Staff Work & Cost Analysis
@@ -179,7 +179,7 @@ LEFT JOIN
 
 ### Data Visualization
 
-![Delivery vs Pickup](Images/Delivery_vs_Pickup.png)
+![Delivery vs Pickup](SQL_Pizzeria_Project/Images/Delivery_vs_Pickup.png)
 
 *Compares delivery and pickup orders, guiding logistics and operational planning.*
 
