@@ -1,9 +1,9 @@
 # Introduction
 A complete management system for a pizzeria, tracking orders, inventory and staff shifts, with dashboards for sales analysis and insights.
 
-For SQL queries: [SQL_Pizzeria_Management_System folder](/SQL_Pizzaria_Project/)
+For SQL queries: [SQL_Pizzeria_Management_System folder](/SQL_Pizzeria_Management_System-main/SQL_Pizzeria_Project/)
 
-# Backround
+# Background
 Managing a pizzeria involves handling orders, inventory and staff efficiently. This project simplifies these tasks by combining SQL-based management with Python dashboards for sales analysis and insights.
 
 ### The questions I wanted to answer through my SQL queries were:
@@ -26,7 +26,7 @@ For this Pizzeria Management project, I leveraged several key tools to manage da
 Each SQL query in this project was designed to uncover actionable insights about the pizzeria’s operations. Below is a summary of how I approached the main questions and what each analysis revealed:
 
 ### 1.Orders by Item and Category
-This query combines orders, items and customer data to create a detailed transactional dataset, which serves as the foundation for identifying popular products and sales patterns.
+This query joins the *orders*, *items*, and *address* tables to create a unified view of each order. It enriches order-level data with product information and delivery details, producing a denormalized dataset suitable for analysis.
 
 ```sql
 SELECT 
@@ -51,17 +51,17 @@ LEFT JOIN
 
 ### Key insights:
 
--**Top-Selling Items:** Certain pizzas and sides consistently appear as the most ordered items, highlighting customer favorites.
+-**Product Performance Analysis:** Enables identification of best-selling items based on order frequency and quantity.
 
--**Category Trends:** Orders are unevenly distributed across categories, helping the pizzeria prioritize inventory for high-demand items.
+-**Category-Level Insights:** Supports comparison of demand across different product categories (e.g., pizzas vs sides).
 
 -**Delivery vs Pickup:** The query also allows tracking the proportion of delivery orders versus in-store pickups, useful for logistics and staffing planning.
 
 ### Data Visualization
 
-![Pie_chart_of_Sales](SQL_Pizzeria_Project/Images/Pie_chart_of_Sales.png)
+![Charts](SQL_Pizzeria_Project/Images/Charts.png)
 
-*Visualizes the proportion of sales per category, helping identify top-selling product types.*
+*Visualizes the proportion of sales per category, top-selling product types and compares delivery and pickup orders*
 
 ### 2.Ingredient Requirements and Cost
 To determine how much of each ingredient is required for current orders and to calculate the associated cost, I created a view that aggregates order quantities with recipe amounts and ingredient prices. This query helps the pizzeria manage inventory efficiently and control ingredient costs.
@@ -101,16 +101,11 @@ FROM
 ```
 
 ### Key Insights:
--**Ingredient Planning:** Identifies exactly how much of each ingredient is needed based on current orders, preventing shortages.
+-**Ingredient demand estimation:** Calculates total ingredient usage based on actual order volumes and recipe composition, enabling demand-driven inventory planning.
 
--**Cost Analysis:** Calculates the cost per ingredient for all orders, helping track total expenses and optimize menu pricing.
+-**Standardized ingredient costing:** Normalizes ingredient prices into a unit cost (price per weight unit), allowing consistent cost comparison across all ingredients.
 
--**Inventory Efficiency:** Provides a foundation to compare required quantities against current stock, enabling smarter purchasing decisions.
-
-### Data Visualization
-
-![Top Selling Items](SQL_Pizzeria_Project/Images/Top_Selling_Items.png)
-*Shows which items contribute most to revenue, supporting inventory and menu decisions.*
+-**Cost of goods sold (COGS) by ingredient:** Computes the total ingredient cost driven by sales, providing a breakdown of production cost contribution per ingredient.
 
 ### 3.Inventory vs Orders
 To monitor how the available inventory compares with current order requirements, this query calculates the remaining quantities of each ingredient after fulfilling all orders. This helps the pizzeria identify shortages and optimize stock management.
@@ -137,16 +132,16 @@ LEFT JOIN
 ```
 
 ### Key Insights:
--**Stock Shortages:** Quickly identifies ingredients that are running low, helping prioritize purchases.
+-**Ingredient stock depletion analysis:** Compares total ingredient demand against available inventory to identify potential shortages after fulfilling all orders.
 
--**Inventory Optimization:** Shows which ingredients have surplus, reducing waste and overstocking.
+-**Inventory surplus detection:** Highlights ingredients with excess stock, supporting better procurement planning and reduced waste.
 
--**Operational Planning:** Supports decision-making for menu availability and supplier orders.
+-**Stock-based operational planning:** Provides visibility into ingredient availability constraints, helping guide purchasing decisions and menu management.
 
 ### Data Visualization
 
-![Orders and Sales by Hour](SQL_Pizzeria_Project/Images/Orders_and_Sales_by_Hour.png)
-*Tracks order volume and sales across hours of the day, revealing peak periods for staffing and preparation.*
+![Orders and Sales by Hour](SQL_Pizzeria_Project/Images/Remaining_Stock.png)
+*This chart highlights the top 10 ingredients closest to depletion, instantly identifying critical shortages to prioritize restocking..*
 
 ### 4.Staff Work & Cost Analysis
 To understand staff allocation and labor costs, this query calculates hours worked per shift and the associated cost per staff member. This allows the pizzeria to optimize staffing and control labor expenses.
@@ -179,9 +174,9 @@ LEFT JOIN
 
 ### Data Visualization
 
-![Delivery vs Pickup](SQL_Pizzeria_Project/Images/Delivery_vs_Pickup.png)
+![Delivery vs Pickup](SQL_Pizzeria_Project/Images/Staff_Cost.png)
 
-*Compares delivery and pickup orders, guiding logistics and operational planning.*
+*This chart breaks down the total labor cost per employee, providing clear visibility into payroll distribution and helping to optimize staffing expenses.*
 
 # What I Learned
 
@@ -198,8 +193,6 @@ LEFT JOIN
 -**Product Performance:** Identified which items and categories drive the most sales, supporting inventory and menu planning.
 
 -**Inventory Management:** Highlighted gaps and surpluses in stock, helping optimize procurement and reduce waste.
-
--**Sales Patterns:** Detected peak times for orders and revenue, informing operational planning and resource allocation.
 
 -**Customer Preferences:** Analyzed delivery vs. pickup trends, guiding logistics and service strategy.
 
