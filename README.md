@@ -59,7 +59,7 @@ LEFT JOIN
 
 ### Data Visualization
 
-![Charts](SQL_Pizzeria_Project/Images/Charts.png)
+![Charts](SQL_Pizzeria_Management_System-main/SQL_Pizzeria_Project/Images/Charts.png)
 
 *Visualizes the proportion of sales per category, top-selling product types and compares delivery and pickup orders*
 
@@ -140,7 +140,7 @@ LEFT JOIN
 
 ### Data Visualization
 
-![Orders and Sales by Hour](SQL_Pizzeria_Project/Images/Remaining_Stock.png)
+![Orders and Sales by Hour](SQL_Pizzeria_Management_System-main/SQL_Pizzeria_Project/Images/Remaining_Stock.png)
 *This chart highlights the top 10 ingredients closest to depletion, instantly identifying critical shortages to prioritize restocking..*
 
 ### 4.Staff Work & Cost Analysis
@@ -174,7 +174,7 @@ LEFT JOIN
 
 ### Data Visualization
 
-![Delivery vs Pickup](SQL_Pizzeria_Project/Images/Staff_Cost.png)
+![Delivery vs Pickup](SQL_Pizzeria_Management_System-main/SQL_Pizzeria_Project/Images/Staff_Cost.png)
 
 *This chart breaks down the total labor cost per employee, providing clear visibility into payroll distribution and helping to optimize staffing expenses.*
 
