@@ -141,7 +141,9 @@ LEFT JOIN
 ### Data Visualization
 
 ![Orders and Sales by Hour](SQL_Pizzeria_Management_System-main/SQL_Pizzeria_Project/Images/Remaining_Stock.png)
-*This chart highlights the top 10 ingredients closest to depletion, instantly identifying critical shortages to prioritize restocking..*
+
+
+*This chart highlights the top 10 ingredients closest to depletion, instantly identifying critical shortages to prioritize restocking.*
 
 ### 4.Staff Work & Cost Analysis
 To understand staff allocation and labor costs, this query calculates hours worked per shift and the associated cost per staff member. This allows the pizzeria to optimize staffing and control labor expenses.
